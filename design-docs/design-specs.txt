@@ -1,0 +1,208 @@
+System Specification: “Structured Chess Thought Analyzer”
+Overview
+A Python program that takes a PGN file and analyzes each move of a chess game using your structured five-step thought process:
+
+Orient
+
+Direction
+
+Candidates
+
+Calculation
+
+Blunder Check
+
+Main Components
+1. PGN Parser
+Input: .pgn file
+
+Output: list of (position, move) tuples
+
+2. Thought Process Engine
+For each move:
+
+Input: current board, move, player_color
+
+Output: structured analysis dictionary per step
+
+Step-by-Step Operationalization
+Step 1: ORIENT
+Goal: Identify key static elements of the position
+
+Substeps
+Kings:
+
+Are there any open files/ranks/diagonals leading to the king?
+
+Are there any possible checks?
+
+Things:
+
+List all loose, hanging, overloaded, or weak pieces/pawns
+
+Strings:
+
+Detect alignments for pins, skewers, and discovered attacks
+
+Pseudo-Code
+python
+Copy
+Edit
+def orient(board, color):
+    data = {}
+
+    # 1. King Safety
+    king_square = board.king(color)
+    data['king_exposed'] = is_king_exposed(board, king_square)
+    data['checks_available'] = get_possible_checks(board, not color)
+
+    # 2. Hanging & Weak Pieces
+    data['hanging_pieces'] = find_hanging_pieces(board, color)
+    data['weak_pawns'] = find_weak_pawns(board, color)
+    data['overloaded'] = find_overloaded_defenders(board, color)
+
+    # 3. Strings (pins, discoveries)
+    data['pins'] = find_pins(board, color)
+    data['discovered_attack_lines'] = find_discoveries(board, color)
+
+    return data
+Step 2: SELECT DIRECTION
+Goal: Determine what kind of plan to pursue
+
+Substeps
+Detect immediate threats (opponent’s last move)
+
+Determine phase of game (opening, middlegame, endgame)
+
+Choose plan based on:
+
+Material situation
+
+Threats
+
+Game phase (e.g., castle, attack, defend, promote)
+
+Pseudo-Code
+python
+Copy
+Edit
+def select_direction(board, color, last_move, move_number):
+    phase = get_game_phase(board)
+    is_threat = move_creates_threat(board, last_move, not color)
+
+    if is_threat:
+        responses = generate_threat_responses(board, color)
+        return {'phase': phase, 'threat_response': responses}
+
+    else:
+        plan = suggest_plan(board, color, phase)
+        return {'phase': phase, 'strategic_plan': plan}
+Step 3: GENERATE CANDIDATES
+Goal: List plausible moves based on Orientation + Direction
+
+Substeps
+Filter legal moves based on:
+
+Addressing threats
+
+Aligning with strategic plan
+
+Avoiding tactical blunders
+
+Pseudo-Code
+python
+Copy
+Edit
+def generate_candidates(board, color, direction_data):
+    legal_moves = list(board.legal_moves)
+    candidates = []
+
+    for move in legal_moves:
+        if move_fits_plan(board, move, direction_data):
+            candidates.append(move)
+
+    return candidates
+Step 4: CALCULATE
+Goal: Evaluate top candidate lines using engine
+
+Substeps
+For each candidate:
+
+Evaluate best line (e.g., 3–5 ply)
+
+Score and annotate threats, gains, positional shifts
+
+Pseudo-Code
+python
+Copy
+Edit
+def calculate(board, candidates, engine):
+    evaluations = []
+
+    for move in candidates:
+        board.push(move)
+        score = engine.analyse(board, chess.engine.Limit(depth=10))['score']
+        board.pop()
+
+        evaluations.append({'move': move, 'score': score})
+
+    evaluations.sort(key=lambda x: -x['score'].relative.score())  # best first
+    return evaluations
+Step 5: BLUNDER CHECK
+Goal: Quick scan for opponent’s best replies
+
+Substeps
+Evaluate top 1–2 engine replies to selected move
+
+Highlight any large eval swings (potential blunders)
+
+Pseudo-Code
+python
+Copy
+Edit
+def blunder_check(board, selected_move, engine):
+    board.push(selected_move)
+    top_lines = engine.analyse(board, chess.engine.Limit(depth=10), multipv=2)
+    board.pop()
+
+    responses = [line['pv'][0] for line in top_lines]
+    return responses
+Main Execution Loop
+python
+Copy
+Edit
+def analyze_game(pgn_path):
+    game = load_pgn(pgn_path)
+    board = chess.Board()
+    engine = load_stockfish_engine()
+
+    for move_number, move in enumerate(game.mainline_moves(), 1):
+        color = board.turn
+        orient_data = orient(board, color)
+        last_move = move if move_number > 1 else None
+        direction_data = select_direction(board, color, last_move, move_number)
+        candidates = generate_candidates(board, color, direction_data)
+        evaluations = calculate(board, candidates, engine)
+        best_move = evaluations[0]['move']
+        blunder_responses = blunder_check(board, best_move, engine)
+
+        display_thought_process(board, move, {
+            'orient': orient_data,
+            'direction': direction_data,
+            'candidates': candidates,
+            'evaluations': evaluations,
+            'blunder_check': blunder_responses
+        })
+
+        board.push(move)
+Output Format
+Can be:
+
+Markdown (for Jupyter)
+
+Plaintext (terminal)
+
+HTML (for web)
+
+CSV or JSON (for storage)
+

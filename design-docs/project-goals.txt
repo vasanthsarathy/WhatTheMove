@@ -1,0 +1,75 @@
+Project Goal
+Input: PGN file
+Output: Annotated analysis for each move based on your thought process
+
+Core Structure
+We’ll break your process into five modules:
+
+1. Orient
+Analyze board position:
+
+Identify open files/ranks/diagonals to kings
+
+List hanging, loose, overloaded pieces and weak pawns
+
+Detect pins and discovered attack potential
+
+2. Select Direction
+Based on the phase:
+
+Detect threats: use engine or static eval for hanging pieces and checks
+
+Determine game phase (opening, middlegame, endgame) via move number or material
+
+Suggest goals based on phase and evaluation (e.g., "simplify if up material")
+
+3. Generate Candidates
+Based on threats and direction, generate relevant legal moves
+
+Classify by tactical, positional, developmental, or king safety relevance
+
+4. Calculate
+Use engine (like Stockfish via python-chess) to evaluate top lines
+
+Show forcing lines, threats created, and if the move fixes opponent problems
+
+5. Blunder Check
+After selecting a move, quickly show top 1–2 engine responses to highlight any potential issues
+
+Tools and Libraries
+python-chess for PGN parsing and board manipulation
+
+stockfish for engine evaluation
+
+Optional: natural language generation using templates to describe each stage
+
+
+
+---- 
+
+Example Output (per move)
+text
+Copy
+Edit
+Move 12. Nf3 to g5
+
+1. ORIENT:
+- King Safety: No immediate checks. Black’s king uncastled, open e-file.
+- Things: d6 is weak, f7 is backward and under pressure. Ng5 is unprotected.
+- Strings: Bishop on c4 pins f7 indirectly. Potential discovery if knight moves.
+
+2. DIRECTION:
+- No threats to us. Middlegame. Direction: attack on kingside, increase pressure on f7.
+
+3. CANDIDATES:
+- Ng5 (pressure f7), Qd2 (develops), O-O (castle), f4 (pawn storm idea)
+
+4. CALCULATION:
+- Ng5 → h6 → h4 → hxg5 ... evaluation: +0.8
+- Qd2 → O-O-O → Bh6 idea. eval: +0.4
+
+5. BLUNDER CHECK:
+- Opponent’s best reply: h6 (forces knight to decide).
+- No immediate tactical refutations found.
+
+Final move selected: Ng5

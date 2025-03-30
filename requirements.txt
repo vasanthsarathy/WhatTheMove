@@ -1,0 +1,4 @@
+streamlit>=1.22.0
+python-chess>=1.9.0
+cairosvg>=2.5.2
+Pillow>=9.0.0 

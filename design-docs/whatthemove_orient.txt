@@ -1,0 +1,1792 @@
+
+=== Move 1: Black plays e4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: r@a8, r@h8
+  - Overloaded pieces: p@a7, p@b7, p@c7, p@f7, p@g7, p@h7, n@b8, b@c8, q@d8, k@e8, b@f8, n@g8
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 2: White plays c5 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: R@a1, R@h1, P@e4
+  - Overloaded pieces: N@b1, B@c1, Q@d1, K@e1, B@f1, N@g1, P@a2, P@b2, P@c2, P@f2, P@g2, P@h2
+  - Weak pawns: e4
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 3: Black plays c3 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: p@c5, r@a8, r@h8
+  - Overloaded pieces: p@a7, p@b7, p@f7, p@g7, p@h7, n@b8, b@c8, q@d8, k@e8, b@f8, n@g8
+  - Weak pawns: c5
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 4: White plays Nc6 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: R@a1, R@h1, P@e4
+  - Overloaded pieces: N@b1, B@c1, Q@d1, K@e1, B@f1, N@g1, P@a2, P@b2, P@f2, P@g2, P@h2
+  - Weak pawns: e4
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 5: Black plays Bc4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: p@c5, r@a8, r@h8
+  - Overloaded pieces: p@b7, p@f7, p@g7, p@h7, k@e8, b@f8, n@g8
+  - Weak pawns: c5
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 6: White plays e6 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: R@a1, R@h1, P@g2, B@c4, P@e4
+  - Overloaded pieces: N@b1, B@c1, Q@d1, K@e1, N@g1, P@b2, P@f2, P@h2
+  - Weak pawns: g2, e4
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 7: Black plays Qf3 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: r@a8, r@h8
+  - Overloaded pieces: p@c5, p@b7, p@f7, p@g7, p@h7, k@e8, b@f8, n@g8
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 8: White plays g6 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['f3f7']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: R@a1, B@c1, K@e1, R@h1, B@c4
+  - Overloaded pieces: N@b1, N@g1, P@b2, P@g2, P@h2, P@e4
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 1 detected
+
+=== Move 9: Black plays Nh3 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: r@a8, r@h8
+  - Overloaded pieces: p@c5, p@b7, p@f7, p@h7, k@e8, b@f8, n@g8
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 10: White plays Nf6 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: R@a1, B@c1, R@h1, B@c4
+  - Overloaded pieces: N@b1, K@e1, P@b2, P@g2, P@h2, Q@f3, P@e4
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 11: Black plays d4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: r@a8, r@h8
+  - Overloaded pieces: p@c5, n@f6, p@b7, p@f7
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 12: White plays cxd4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: R@a1, B@c1, R@h1, B@c4
+  - Overloaded pieces: N@b1, K@e1, P@b2, P@g2, P@h2, Q@f3, P@e4
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 13: Black plays cxd4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['f8b4', 'd8a5']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: r@a8, r@h8
+  - Overloaded pieces: n@f6, p@b7, p@f7
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 2 detected
+
+=== Move 14: White plays Nxd4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: R@a1, B@c1, R@h1, B@c4
+  - Overloaded pieces: N@b1, K@e1, P@b2, P@g2, P@h2, Q@f3, P@e4
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 15: Black plays Qd3 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['f8b4', 'd8a5', 'd4f3', 'd4c2']
+• Things:
+  - Hanging pieces: n@d4
+  - Loose pieces: n@d4, r@a8, r@h8
+  - Overloaded pieces: n@f6, p@a7, p@b7, p@f7, q@d8
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 4 detected
+
+=== Move 16: White plays Nc6 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['d3d7']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: R@a1, B@c1, R@h1, P@g2
+  - Overloaded pieces: K@e1, P@b2, P@h2, Q@d3, B@c4, P@e4
+  - Weak pawns: g2
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 1 detected
+
+=== Move 17: Black plays O-O ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: r@a8, r@h8
+  - Overloaded pieces: n@f6, p@b7, p@f7
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 18: White plays d5 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: R@a1
+  - Overloaded pieces: B@c1, P@b2, P@g2, P@h2, Q@d3, B@c4, P@e4
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 19: Black plays Bb5 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: r@a8, r@h8
+  - Overloaded pieces: n@c6, n@f6, p@b7, p@f7
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 20: White plays Bg7 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['b5c6']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: R@a1
+  - Overloaded pieces: B@c1, P@a2, P@b2, P@g2, P@h2, Q@d3, P@e4, B@b5
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 14 detected
+  - Potential discoveries: 1 detected
+
+=== Move 21: Black plays Nc3 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: b@g7, r@a8
+  - Overloaded pieces: n@c6, p@b7, p@f7, r@h8
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 22: White plays O-O ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: R@a1
+  - Overloaded pieces: P@b2, P@g2, P@h2, Q@d3
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 23: Black plays Re1 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: r@a8
+  - Overloaded pieces: n@c6, p@b7, b@g7
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 24: White plays Nb4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: R@a1, R@e1
+  - Overloaded pieces: P@b2, P@g2, P@h2, Q@d3
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 25: Black plays Qe2 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: n@b4, r@a8
+  - Overloaded pieces: p@a7, p@b7, b@g7, q@d8
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 26: White plays dxe4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: R@a1
+  - Overloaded pieces: R@e1, P@g2, P@h2, N@c3, N@h3
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 27: Black plays Nxe4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: n@b4, r@a8
+  - Overloaded pieces: p@a7, p@b7, b@g7, q@d8
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 28: White plays Nxe4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: R@a1
+  - Overloaded pieces: R@e1, P@a2, P@g2, P@h2, N@h3, B@b5
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 29: Black plays Qxe4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: n@b4
+  - Loose pieces: n@b4, r@a8
+  - Overloaded pieces: p@a7, p@b7, b@g7, p@h7, q@d8, k@g8
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 30: White plays Nc2 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: R@a1
+  - Loose pieces: R@a1, B@b5
+  - Overloaded pieces: R@e1, P@a2, P@b2, P@h2, N@h3, Q@e4
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 31: Black plays Qxc2 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: r@a8
+  - Overloaded pieces: p@a7, p@b7, b@g7, p@h7, q@d8, k@g8
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 32: White plays a6 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: B@b5
+  - Loose pieces: R@a1, R@e1, Q@c2, B@b5
+  - Overloaded pieces: P@a2, P@g2, P@h2, N@h3
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 33: Black plays Ba4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: r@a8
+  - Overloaded pieces: p@b7, b@g7, p@h7, q@d8, k@g8
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 34: White plays b5 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: R@a1, R@e1
+  - Overloaded pieces: P@a2, Q@c2, P@g2, P@h2, N@h3, B@a4
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 35: Black plays Qc6 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: r@a8
+  - Loose pieces: r@a8
+  - Overloaded pieces: p@b5, b@g7, p@h7, q@d8, k@g8
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 36: White plays Bb7 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: B@a4, Q@c6
+  - Loose pieces: R@a1, R@e1, B@a4, Q@c6
+  - Overloaded pieces: P@a2, P@b2, P@h2, N@h3
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 37: Black plays Qxb7 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: None
+  - Overloaded pieces: p@b5, p@a6, p@e6, b@g7, p@h7, r@a8, k@g8
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 38: White plays bxa4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['b7f7']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: R@a1, R@e1, Q@b7
+  - Overloaded pieces: P@a2, P@h2, N@h3
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 1 detected
+
+=== Move 39: Black plays Qf3 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: p@a4
+  - Overloaded pieces: p@a6, p@e6, b@g7, p@h7, r@a8, k@g8
+  - Weak pawns: a4
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 40: White plays Qa5 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['f3f7']
+• Things:
+  - Hanging pieces: R@e1
+  - Loose pieces: R@a1, R@e1
+  - Overloaded pieces: P@a2, P@b2, P@h2, Q@f3
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 1 detected
+
+=== Move 41: Black plays Bg5 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['a5e1']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: q@a5
+  - Overloaded pieces: p@a4, p@e6, b@g7, p@h7, r@a8, k@g8
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 1 detected
+
+=== Move 42: White plays f6 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: P@b2
+  - Overloaded pieces: R@a1, R@e1, P@a2, P@h2, Q@f3, B@g5
+  - Weak pawns: b2
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 43: Black plays Bxf6 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['a5e1']
+• Things:
+  - Hanging pieces: p@e6
+  - Loose pieces: q@a5, p@e6
+  - Overloaded pieces: p@a4, p@g6, b@g7, p@h7, r@a8, k@g8
+  - Weak pawns: e6
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 1 detected
+
+=== Move 44: White plays Bxf6 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: P@b2
+  - Loose pieces: P@b2
+  - Overloaded pieces: R@a1, R@e1, P@a2, P@h2, Q@f3
+  - Weak pawns: b2
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 45: Black plays Rxe6 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['a5e1']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: q@a5
+  - Overloaded pieces: p@a4, b@f6, p@g6, p@h7, r@a8, k@g8
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 1 detected
+
+=== Move 46: White plays Bxb2 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['e6g6', 'f3f8', 'f3f7']
+• Things:
+  - Hanging pieces: R@a1
+  - Loose pieces: R@a1, R@e6
+  - Overloaded pieces: P@a2, P@h2, Q@f3
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 3 detected
+
+=== Move 47: Black plays Qb7 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['a5e1']
+• Things:
+  - Hanging pieces: b@b2
+  - Loose pieces: b@b2, q@a5
+  - Overloaded pieces: p@a4, p@g6, p@h7, r@a8, k@g8
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 1 detected
+
+=== Move 48: White plays Bxa1 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['b7h7', 'b7g7', 'b7f7', 'e6g6']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: P@a2, R@e6, Q@b7
+  - Overloaded pieces: K@g1, P@h2, N@h3
+  - Weak pawns: a2
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 4 detected
+
+=== Move 49: Black plays Nf4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['a5e1']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: b@a1, q@a5
+  - Overloaded pieces: p@a4, p@g6, p@h7, r@a8, k@g8
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 1 detected
+
+=== Move 50: White plays Rad8 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['b7h7', 'b7g7', 'b7f7', 'e6g6']
+• Things:
+  - Hanging pieces: N@f4
+  - Loose pieces: K@g1, P@a2, N@f4, Q@b7
+  - Overloaded pieces: P@f2, P@h2, R@e6
+  - Weak pawns: a2
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 4 detected
+
+=== Move 51: Black plays h3 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['d8d1', 'a5e1']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: b@a1, q@a5
+  - Overloaded pieces: p@a4, p@a6, p@g6, p@h7, k@g8
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 2 detected
+
+=== Move 52: White plays Rxf4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['b7h7', 'b7g7', 'b7f7', 'e6e8', 'e6g6']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: K@g1, P@a2, R@e6, Q@b7
+  - Overloaded pieces: P@f2, P@h3
+  - Weak pawns: a2
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 5 detected
+
+=== Move 53: Black plays Kh2 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: b@a1, r@f4, q@a5
+  - Overloaded pieces: p@a6, p@g6, p@h7, r@d8, k@g8
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 54: White plays Rxf2 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['b7h7', 'b7g7', 'b7f7', 'e6e8', 'e6g6']
+• Things:
+  - Hanging pieces: P@a2
+  - Loose pieces: P@a2, K@h2, R@e6, Q@b7
+  - Overloaded pieces: None
+  - Weak pawns: a2
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 5 detected
+
+=== Move 55: Black plays Qe7 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['a5c7', 'a5e5', 'f2g2', 'a1e5']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: b@a1, r@f2, q@a5
+  - Overloaded pieces: p@a4, p@a6, p@g6, p@h7, r@d8, k@g8
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 9 detected
+  - Potential discoveries: 4 detected
+
+=== Move 56: White plays Qf5 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['e7f8', 'e7e8', 'e7d8', 'e7h7', 'e7g7', 'e7f7', 'e6g6']
+• Things:
+  - Hanging pieces: P@a2
+  - Loose pieces: P@a2, K@h2
+  - Overloaded pieces: P@g2, R@e6, Q@e7
+  - Weak pawns: a2
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 7 detected
+
+=== Move 57: Black plays Qxd8+ ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: p@a6, k@g8
+  - Loose pieces: b@a1, p@a4, p@a6, k@g8
+  - Overloaded pieces: r@f2, p@h7
+  - Weak pawns: a4, a6
+• Strings:
+  - Potential pins: 8 detected
+  - Potential discoveries: 0 detected
+
+=== Move 58: White plays Kg7 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['d8h8', 'd8g8', 'd8f8', 'd8e7', 'd8d7', 'd8c7', 'd8f6', 'd8d4', 'e6e7', 'e6g6']
+• Things:
+  - Hanging pieces: P@a2, R@e6
+  - Loose pieces: P@a2, K@h2, R@e6, Q@d8
+  - Overloaded pieces: P@g2
+  - Weak pawns: a2
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 10 detected
+
+=== Move 59: Black plays Qe7+ ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: p@a6
+  - Loose pieces: b@a1, p@a4, p@a6
+  - Overloaded pieces: r@f2, k@g7, p@h7
+  - Weak pawns: a4, a6
+• Strings:
+  - Potential pins: 8 detected
+  - Potential discoveries: 0 detected
+
+=== Move 60: White plays Qf7 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['e7f8', 'e7f7', 'e7f6', 'e6g6']
+• Things:
+  - Hanging pieces: P@a2
+  - Loose pieces: P@a2, K@h2
+  - Overloaded pieces: P@g2, R@e6, Q@e7
+  - Weak pawns: a2
+• Strings:
+  - Potential pins: 6 detected
+  - Potential discoveries: 4 detected
+
+=== Move 61: Black plays Qxf7+ ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: r@f2, p@a6
+  - Loose pieces: b@a1, r@f2, p@a4, p@a6
+  - Overloaded pieces: k@g7, p@h7
+  - Weak pawns: a4, a6
+• Strings:
+  - Potential pins: 7 detected
+  - Potential discoveries: 0 detected
+
+=== Move 62: White plays Kxf7 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['e6e7', 'e6f6']
+• Things:
+  - Hanging pieces: P@a2, R@e6
+  - Loose pieces: P@a2, K@h2, R@e6
+  - Overloaded pieces: P@g2
+  - Weak pawns: a2
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 2 detected
+
+=== Move 63: Black plays Rxa6 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['f2g2', 'a1e5']
+• Things:
+  - Hanging pieces: p@a4
+  - Loose pieces: b@a1, r@f2, p@a4, p@h7
+  - Overloaded pieces: k@f7
+  - Weak pawns: a4, h7
+• Strings:
+  - Potential pins: 6 detected
+  - Potential discoveries: 2 detected
+
+=== Move 64: White plays Rxa2 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: Yes
+  - Checkmate threat available: No
+  - Checks available: ['a6a7', 'a6f6']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: K@h2, R@a6
+  - Overloaded pieces: P@g2
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 2 detected
+
+=== Move 65: Black plays h4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: Yes
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['a2g2', 'a1e5']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: r@a2, k@f7, p@h7
+  - Overloaded pieces: b@a1, p@a4
+  - Weak pawns: h7
+• Strings:
+  - Potential pins: 6 detected
+  - Potential discoveries: 2 detected
+
+=== Move 66: White plays Be5+ ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: Yes
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: K@h2
+  - Loose pieces: K@h2, P@h4, R@a6
+  - Overloaded pieces: P@g2
+  - Weak pawns: h4
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 67: Black plays Kh3 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: Yes
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['a2a3']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: r@a2, b@e5, k@f7, p@h7
+  - Overloaded pieces: p@a4
+  - Weak pawns: h7
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 1 detected
+
+=== Move 68: White plays a3 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: Yes
+  - Checkmate threat available: No
+  - Checks available: ['a6a7', 'a6f6']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: R@a6
+  - Overloaded pieces: P@g2, K@h3, P@h4
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 2 detected
+
+=== Move 69: Black plays Ra7+ ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: Yes
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: k@f7
+  - Loose pieces: r@a2, b@e5, k@f7, p@h7
+  - Overloaded pieces: p@a3
+  - Weak pawns: h7
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 70: White plays Ke6 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['a7e7', 'a7a6']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: R@a7
+  - Overloaded pieces: P@g2, K@h3, P@h4
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 2 detected
+
+=== Move 71: Black plays Ra6+ ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: k@e6
+  - Loose pieces: r@a2, k@e6, p@h7
+  - Overloaded pieces: p@a3, b@e5, p@g6
+  - Weak pawns: h7
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 72: White plays Kd5 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: Yes
+  - Checkmate threat available: No
+  - Checks available: ['a6d6', 'a6a5']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: R@a6
+  - Overloaded pieces: P@g2, K@h3, P@h4
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 2 detected
+
+=== Move 73: Black plays Ra5+ ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: Yes
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: k@d5
+  - Loose pieces: r@a2, k@d5, p@h7
+  - Overloaded pieces: p@a3, b@e5, p@g6
+  - Weak pawns: h7
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 74: White plays Ke6 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['a5a6', 'a5e5']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: R@a5
+  - Overloaded pieces: P@g2, K@h3, P@h4
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 2 detected
+
+=== Move 75: Black plays g3 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['a2h2']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: r@a2, k@e6, p@h7
+  - Overloaded pieces: p@a3, b@e5, p@g6
+  - Weak pawns: h7
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 1 detected
+
+=== Move 76: White plays Ra1 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['a5a6', 'a5e5']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: K@h3, R@a5
+  - Overloaded pieces: P@g3
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 2 detected
+
+=== Move 77: Black plays Kg4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['h7h5']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: k@e6, p@h7
+  - Overloaded pieces: r@a1, p@a3, b@e5, p@g6
+  - Weak pawns: h7
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 1 detected
+
+=== Move 78: White plays h5+ ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: K@g4
+  - Loose pieces: K@g4, R@a5
+  - Overloaded pieces: P@g3
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 79: Black plays Kg5 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['e5f6', 'e5f4']
+• Things:
+  - Hanging pieces: p@g6
+  - Loose pieces: k@e6, p@g6
+  - Overloaded pieces: r@a1, p@a3, b@e5, p@h5
+  - Weak pawns: g6
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 2 detected
+
+=== Move 80: White plays a2 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['a5a6', 'a5e5']
+• Things:
+  - Hanging pieces: P@g3
+  - Loose pieces: P@g3, R@a5
+  - Overloaded pieces: K@g5
+  - Weak pawns: g3
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 2 detected
+
+=== Move 81: Black plays Kxg6 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: p@h5
+  - Loose pieces: p@h5, k@e6
+  - Overloaded pieces: r@a1, p@a2, b@e5
+  - Weak pawns: h5
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 82: White plays Bc3 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: Yes
+  - Checkmate threat available: No
+  - Checks available: ['a5a6', 'a5e5']
+• Things:
+  - Hanging pieces: R@a5
+  - Loose pieces: P@g3, R@a5, K@g6
+  - Overloaded pieces: P@h4
+  - Weak pawns: g3
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 2 detected
+
+=== Move 83: Black plays Kxh5 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: Yes
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: b@c3, k@e6
+  - Overloaded pieces: r@a1, p@a2
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 84: White plays Bxa5 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: Yes
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: P@g3, K@h5
+  - Overloaded pieces: None
+  - Weak pawns: g3
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 85: Black plays g4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: Yes
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: r@a1, b@a5, k@e6
+  - Overloaded pieces: p@a2
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 86: White plays Rb1 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: Yes
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: None
+  - Overloaded pieces: P@g4, P@h4, K@h5
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 87: Black plays g5 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: Yes
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: p@a2, b@a5, k@e6
+  - Overloaded pieces: r@b1
+  - Weak pawns: a2
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 88: White plays Kf7 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: Yes
+  - Checkmate threat available: No
+  - Checks available: ['g5g6']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: K@h5
+  - Overloaded pieces: P@h4
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 1 detected
+
+=== Move 89: Black plays g6+ ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: Yes
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: k@f7
+  - Loose pieces: p@a2, b@a5, k@f7
+  - Overloaded pieces: r@b1
+  - Weak pawns: a2
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 90: White plays Kg7 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: K@h5
+  - Overloaded pieces: P@h4, P@g6
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 91: Black plays Kg5 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['a5d8', 'a5d2', 'b1b5', 'b1g1']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: p@a2, b@a5, k@g7
+  - Overloaded pieces: r@b1
+  - Weak pawns: a2
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 4 detected
+
+=== Move 92: White plays a1=Q ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: None
+  - Overloaded pieces: P@h4, K@g5, P@g6
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 93: Black plays h5 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['a5d8', 'a5d2', 'b1b5', 'b1g1', 'a1f6', 'a1e5']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: None
+  - Overloaded pieces: q@a1, r@b1, b@a5, k@g7
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 6 detected
+
+=== Move 94: White plays Qe5+ ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: K@g5
+  - Loose pieces: K@g5
+  - Overloaded pieces: P@h5
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 95: Black plays Kh4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['e5e7', 'e5f6', 'e5h5', 'e5g5', 'e5f4', 'e5e4', 'e5d4', 'e5g3', 'e5h2', 'e5e1', 'a5d8', 'a5e1', 'b1b4', 'b1h1']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: r@b1, q@e5
+  - Overloaded pieces: b@a5, k@g7
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 14 detected
+
+=== Move 96: White plays Be1+ ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: K@h4
+  - Loose pieces: K@h4
+  - Overloaded pieces: P@h5, P@g6
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 97: Black plays Kg4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['e5e6', 'e5h5', 'e5g5', 'e5f5', 'e5f4', 'e5e4', 'e5d4', 'e5g3', 'e5e2', 'b1b4']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: r@b1, q@e5
+  - Overloaded pieces: k@g7
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 10 detected
+
+=== Move 98: White plays Rb4+ ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: K@g4
+  - Loose pieces: K@g4
+  - Overloaded pieces: P@h5, P@g6
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 99: Black plays Kh3 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: Yes (e5g3)
+  - Checks available: ['e5e6', 'e5h5', 'e5f5', 'e5g3', 'e5e3', 'e5c3', 'e5h2', 'b4h4', 'b4b3']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: q@e5
+  - Overloaded pieces: b@e1, r@b4, k@g7
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 9 detected
+
+=== Move 100: White plays Qe3+ ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: K@h3
+  - Loose pieces: K@h3, P@h5
+  - Overloaded pieces: P@g6
+  - Weak pawns: h5
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 101: Black plays Kg2 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['b4g4', 'b4b2', 'e3g5', 'e3e4', 'e3h3', 'e3g3', 'e3f3', 'e3f2', 'e3e2', 'e3d2', 'e3g1']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: q@e3, k@g7
+  - Overloaded pieces: b@e1, r@b4
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 11 detected
+
+=== Move 102: White plays Rb3 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['h5h6']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: K@g2, P@h5
+  - Overloaded pieces: P@g6
+  - Weak pawns: h5
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 1 detected
+
+=== Move 103: Black plays h6+ ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: k@g7
+  - Loose pieces: k@g7
+  - Overloaded pieces: b@e1, r@b3, q@e3
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 104: White plays Kxh6 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: No
+  - Open line to opponent king: Yes
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: P@g6
+  - Loose pieces: K@g2, P@g6
+  - Overloaded pieces: None
+  - Weak pawns: g6
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 105: Black plays g7 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: Yes
+  - Open line to opponent king: No
+  - Checkmate threat available: No
+  - Checks available: ['e3g5', 'e3e4', 'e3h3', 'e3g3', 'e3f3', 'e3f2', 'e3e2', 'e3d2', 'e3g1', 'b3b2']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: None
+  - Overloaded pieces: b@e1, r@b3, q@e3, k@h6
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 10 detected
+
+=== Move 106: White plays Kxg7 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: Yes
+  - Open line to opponent king: Yes
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: K@g2
+  - Overloaded pieces: None
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 107: Black plays Kf1 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: Yes
+  - Open line to opponent king: Yes
+  - Checkmate threat available: Yes (e3f2)
+  - Checks available: ['e3f4', 'e3h3', 'e3f3', 'e3d3', 'e3f2', 'e3e2', 'e3g1']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: k@g7
+  - Overloaded pieces: b@e1, r@b3, q@e3
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 7 detected
+
+=== Move 108: White plays Bh4 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: Yes
+  - Open line to opponent king: Yes
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: K@f1
+  - Overloaded pieces: None
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 109: Black plays Kg2 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: Yes
+  - Open line to opponent king: Yes
+  - Checkmate threat available: No
+  - Checks available: ['e3g5', 'e3e4', 'e3h3', 'e3g3', 'e3f3', 'e3f2', 'e3e2', 'e3d2', 'e3g1', 'b3b2']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: b@h4, k@g7
+  - Overloaded pieces: r@b3, q@e3
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 10 detected
+
+=== Move 110: White plays Rb2+ ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: Yes
+  - Open line to opponent king: Yes
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: K@g2
+  - Loose pieces: K@g2
+  - Overloaded pieces: None
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
+
+=== Move 111: Black plays Kf1 ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: Yes
+  - Open line to opponent king: Yes
+  - Checkmate threat available: Yes (e3f2)
+  - Checks available: ['e3f4', 'e3h3', 'e3f3', 'e3d3', 'e3f2', 'e3e2', 'e3g1', 'e3e1', 'e3c1', 'b2f2', 'b2b1']
+• Things:
+  - Hanging pieces: None
+  - Loose pieces: r@b2, q@e3, b@h4, k@g7
+  - Overloaded pieces: None
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 11 detected
+
+=== Move 112: White plays Qc1# ===
+ORIENT Step:
+• Kings:
+  - Open line to own king: Yes
+  - Open line to opponent king: Yes
+  - Checkmate threat available: No
+  - Checks available: None
+• Things:
+  - Hanging pieces: K@f1
+  - Loose pieces: K@f1
+  - Overloaded pieces: None
+  - Weak pawns: None
+• Strings:
+  - Potential pins: 0 detected
+  - Potential discoveries: 0 detected
