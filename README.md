@@ -14,9 +14,11 @@ WhatTheMove is a minimalist chess analysis tool that breaks down positions using
   - **E**valuate position
   - **N**ote tactical opportunities
   - **T**hink strategically
-- **Dual Perspective**: See analysis from both White and Black's viewpoint
+- **Defense & Offense Analysis**: See both defensive vulnerabilities and offensive opportunities
 - **Interactive Board**: Navigate through the game with a visual chessboard
+- **Board Orientation**: Flip the board or enable auto-flip to see the position from the current player's perspective
 - **Clean Interface**: Minimalist design focused on the analysis
+- **Scrollable Move List**: Compact, easy-to-navigate move history
 
 ## Installation
 
@@ -53,8 +55,29 @@ WhatTheMove is a minimalist chess analysis tool that breaks down positions using
 1. Launch the application
 2. Upload a PGN file using the sidebar
 3. Navigate through moves using the move list or navigation buttons
-4. View the analysis for each position from both perspectives
-5. Use the insights to understand the key elements of each position
+4. View the analysis from the perspective of the player to move
+5. Toggle between Defense and Offense tabs to see different aspects of the position
+6. Use the "Flip Board" button or enable auto-flip in settings to change board orientation
+7. Use the insights to understand the key elements of each position
+
+## Analysis Approach
+
+WhatTheMove provides analysis from the perspective of the player whose turn it is to move:
+
+- **Defense Tab**: Analyzes your own vulnerabilities
+
+  - King safety
+  - Checks opponent can play against you
+  - Your hanging, loose, and overloaded pieces
+  - Pins against your pieces
+  - Opponent's potential discovered attacks
+
+- **Offense Tab**: Analyzes opponent vulnerabilities
+  - Opponent king safety
+  - Checks you can play
+  - Opponent's hanging, loose, and overloaded pieces
+  - Pins you can create
+  - Your potential discovered attacks
 
 ## Project Structure
 

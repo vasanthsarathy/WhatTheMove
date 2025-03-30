@@ -7,7 +7,7 @@ import chess.svg
 import cairosvg
 
 # Utility: Convert board to PNG for Streamlit
-def render_board(board, last_move=None):
+def render_board(board, last_move=None, orientation=chess.WHITE):
     # Lichess-like theme colors
     square_light = "#f0d9b5"
     square_dark = "#b58863"
@@ -19,6 +19,7 @@ def render_board(board, last_move=None):
         board=board, 
         lastmove=last_move, 
         size=400,
+        orientation=orientation,
         colors={
             'square light': square_light,
             'square dark': square_dark,
@@ -207,6 +208,14 @@ with st.sidebar:
     st.header("Game Upload")
     uploaded_file = st.file_uploader("Upload a PGN file", type=["pgn"])
     
+    # Board orientation options
+    st.header("Board Settings")
+    if "board_orientation" not in st.session_state:
+        st.session_state.board_orientation = chess.WHITE
+    
+    # Auto-flip option
+    auto_flip = st.checkbox("Auto-flip board (current player at bottom)", value=False)
+    
     # Add some helpful instructions in the sidebar
     with st.expander("How to use"):
         st.write("""
@@ -214,6 +223,7 @@ with st.sidebar:
         2. Navigate through moves using the buttons or move list
         3. View analysis from both White and Black perspectives
         4. Explore the ORIENT analysis for each position
+        5. Use the 'Flip Board' button or enable auto-flip to change perspective
         """)
 
 # Main content area
@@ -259,14 +269,14 @@ if uploaded_file:
             <style>
                 /* Make buttons smaller */
                 .stButton > button {
-                    padding: 0.25rem 0.5rem;
+                    padding: 0.15rem 0.5rem;
                     font-size: 0.8rem;
                     line-height: 1;
                 }
                 
                 /* Add spacing between move rows */
                 .row-widget.stButton {
-                    margin-bottom: 0.25rem;
+                    margin-bottom: 0.15rem;
                 }
             </style>
         """, unsafe_allow_html=True)
@@ -316,10 +326,24 @@ if uploaded_file:
         for i, move in enumerate(moves[:st.session_state.move_index + 1]):
             last_move = move
             board.push(move)
-        st.image(render_board(board, last_move=last_move), use_container_width=True)
         
-        # Navigation buttons
-        col_prev, col_next = st.columns(2)
+        # Determine board orientation
+        if auto_flip:
+            # Set orientation based on whose turn it is
+            st.session_state.board_orientation = board.turn
+        
+        # Render the board with the current orientation
+        st.image(
+            render_board(
+                board, 
+                last_move=last_move, 
+                orientation=st.session_state.board_orientation
+            ), 
+            use_container_width=True
+        )
+        
+        # Navigation and flip buttons
+        col_prev, col_next, col_flip = st.columns([1, 1, 1])
         if col_prev.button("⬅ Prev", use_container_width=True):
             if st.session_state.move_index > 0:
                 st.session_state.move_index -= 1
@@ -329,39 +353,178 @@ if uploaded_file:
             if st.session_state.move_index < len(moves) - 1:
                 st.session_state.move_index += 1
                 st.rerun()
+        
+        # Flip board button
+        if col_flip.button("🔄 Flip Board", use_container_width=True):
+            st.session_state.board_orientation = not st.session_state.board_orientation
+            st.rerun()
 
     # ANALYSIS
     with col3:
         st.subheader("Analysis")
         if st.session_state.move_index < len(moves):
+            # Get the move that was just played
             move = moves[st.session_state.move_index]
+            
+            # Set up the board to the position before the move
             board = game.board()
             for i in range(st.session_state.move_index):
                 board.push(moves[i])
             
-            # Get the current player's color
-            current_color = board.turn
+            # Get whose turn it was before the move (the player who made the move)
+            player_who_moved = board.turn
             san = board.san(move)
             
-            # Push the move to analyze the resulting position
+            # Push the move to get to the current position
             board.push(move)
             
-            # Create tabs for both perspectives
-            white_tab, black_tab = st.tabs(["White's Perspective", "Black's Perspective"])
+            # After the move is played, it's the other player's turn
+            next_to_move = board.turn
+            player_name = "White" if next_to_move == chess.WHITE else "Black"
+            player_who_moved_name = "White" if player_who_moved == chess.WHITE else "Black"
             
-            # White's perspective analysis
-            with white_tab:
-                white_analysis = orient_analysis(board, chess.WHITE, san, (st.session_state.move_index // 2) + 1)
-                st.markdown(white_analysis)
+            # Display whose perspective we're analyzing from
+            st.markdown(f"## Analysis from {player_name}'s Perspective")
+            st.markdown(f"*After {player_who_moved_name} played {san}, it's {player_name}'s turn to move*")
             
-            # Black's perspective analysis
-            with black_tab:
-                black_analysis = orient_analysis(board, chess.BLACK, san, (st.session_state.move_index // 2) + 1)
-                st.markdown(black_analysis)
+            # Create tabs for defense and offense perspectives
+            defense_tab, offense_tab = st.tabs(["Defense", "Offense"])
             
-            # Set the active tab based on who just moved
-            active_tab = 1 if current_color == chess.WHITE else 0
-            st.query_params["active_tab"] = active_tab
+            # Defense analysis - looking at your own vulnerabilities
+            with defense_tab:
+                st.markdown(f"### Defensive Analysis for {player_name}")
+                st.markdown("*Analyzing your own vulnerabilities and safety*")
+                
+                # King safety
+                st.markdown("**• King Safety**")
+                king_square = board.king(next_to_move)
+                file_open = all(
+                    (board.piece_at(chess.square(chess.square_file(king_square), r)) is None or 
+                     board.piece_at(chess.square(chess.square_file(king_square), r)).piece_type == chess.KING)
+                    for r in range(8)
+                )
+                st.markdown(f"- Your king on open file: {'Yes ⚠️' if file_open else 'No'}")
+                
+                # Checks against you
+                checks_against_you = []
+                for move in board.legal_moves:
+                    if board.gives_check(move):
+                        checks_against_you.append(board.san(move))
+                st.markdown(f"- Checks opponent can play: {', '.join(checks_against_you) if checks_against_you else 'None'}")
+                
+                # Your vulnerable pieces
+                st.markdown("**• Your Vulnerable Pieces**")
+                hanging, loose, overloaded, weak = [], [], [], []
+                for square in chess.SQUARES:
+                    piece = board.piece_at(square)
+                    if not piece or piece.color != next_to_move:
+                        continue
+                    attackers = board.attackers(not next_to_move, square)
+                    defenders = board.attackers(next_to_move, square)
+                    if attackers and not defenders:
+                        hanging.append(f"{piece.symbol()}@{chess.square_name(square)}")
+                    elif not defenders:
+                        loose.append(f"{piece.symbol()}@{chess.square_name(square)}")
+                    elif len(defenders) == 1:
+                        overloaded.append(f"{piece.symbol()}@{chess.square_name(square)}")
+                    if piece.piece_type == chess.PAWN and not defenders:
+                        weak.append(chess.square_name(square))
+                
+                st.markdown(f"- Your hanging pieces: {', '.join(hanging) if hanging else 'None'}")
+                st.markdown(f"- Your loose pieces: {', '.join(loose) if loose else 'None'}")
+                st.markdown(f"- Your overloaded pieces: {', '.join(overloaded) if overloaded else 'None'}")
+                st.markdown(f"- Your weak pawns: {', '.join(weak) if weak else 'None'}")
+                
+                # Potential pins against you
+                st.markdown("**• Potential Pins Against You**")
+                pins_against_you = []
+                for sq in chess.SQUARES:
+                    if board.piece_at(sq) and board.piece_at(sq).color == next_to_move and board.is_pinned(next_to_move, sq):
+                        piece = board.piece_at(sq)
+                        pins_against_you.append(f"{piece.symbol()}@{chess.square_name(sq)}")
+                st.markdown(f"- Your pinned pieces: {', '.join(pins_against_you) if pins_against_you else 'None'}")
+                
+                # Opponent's potential discoveries
+                st.markdown("**• Opponent's Potential Discoveries**")
+                opponent_discoveries = []
+                for move in board.legal_moves:
+                    if board.is_capture(move):
+                        continue  # Skip captures for simplicity
+                    board.push(move)
+                    if board.is_check():
+                        from_square = move.from_square
+                        piece = board.piece_at(move.to_square)
+                        opponent_discoveries.append(f"{piece.symbol()} from {chess.square_name(from_square)}")
+                    board.pop()
+                st.markdown(f"- Opponent discoveries: {', '.join(opponent_discoveries) if opponent_discoveries else 'None'}")
+            
+            # Offense analysis - looking at opponent vulnerabilities
+            with offense_tab:
+                st.markdown(f"### Offensive Analysis for {player_name}")
+                st.markdown("*Analyzing opponent vulnerabilities and your attacking chances*")
+                
+                # Opponent king safety
+                st.markdown("**• Opponent King Safety**")
+                opp_king_square = board.king(not next_to_move)
+                opp_file_open = all(
+                    (board.piece_at(chess.square(chess.square_file(opp_king_square), r)) is None or 
+                     board.piece_at(chess.square(chess.square_file(opp_king_square), r)).piece_type == chess.KING)
+                    for r in range(8)
+                )
+                st.markdown(f"- Opponent king on open file: {'Yes 🎯' if opp_file_open else 'No'}")
+                
+                # Your available checks
+                your_checks = []
+                for move in board.legal_moves:
+                    if board.gives_check(move):
+                        your_checks.append(board.san(move))
+                st.markdown(f"- Checks you can play: {', '.join(your_checks) if your_checks else 'None'}")
+                
+                # Opponent vulnerable pieces
+                st.markdown("**• Opponent Vulnerable Pieces**")
+                opp_hanging, opp_loose, opp_overloaded, opp_weak = [], [], [], []
+                for square in chess.SQUARES:
+                    piece = board.piece_at(square)
+                    if not piece or piece.color != (not next_to_move):
+                        continue
+                    attackers = board.attackers(next_to_move, square)
+                    defenders = board.attackers(not next_to_move, square)
+                    if attackers and not defenders:
+                        opp_hanging.append(f"{piece.symbol()}@{chess.square_name(square)}")
+                    elif not defenders:
+                        opp_loose.append(f"{piece.symbol()}@{chess.square_name(square)}")
+                    elif len(defenders) == 1:
+                        opp_overloaded.append(f"{piece.symbol()}@{chess.square_name(square)}")
+                    if piece.piece_type == chess.PAWN and not defenders:
+                        opp_weak.append(chess.square_name(square))
+                
+                st.markdown(f"- Opponent hanging pieces: {', '.join(opp_hanging) if opp_hanging else 'None'}")
+                st.markdown(f"- Opponent loose pieces: {', '.join(opp_loose) if opp_loose else 'None'}")
+                st.markdown(f"- Opponent overloaded pieces: {', '.join(opp_overloaded) if opp_overloaded else 'None'}")
+                st.markdown(f"- Opponent weak pawns: {', '.join(opp_weak) if opp_weak else 'None'}")
+                
+                # Potential pins you can create
+                st.markdown("**• Potential Pins You Can Create**")
+                pins_you_can_create = []
+                for sq in chess.SQUARES:
+                    if board.piece_at(sq) and board.piece_at(sq).color == (not next_to_move) and board.is_pinned(not next_to_move, sq):
+                        piece = board.piece_at(sq)
+                        pins_you_can_create.append(f"{piece.symbol()}@{chess.square_name(sq)}")
+                st.markdown(f"- Opponent pieces you can pin: {', '.join(pins_you_can_create) if pins_you_can_create else 'None'}")
+                
+                # Your potential discoveries
+                st.markdown("**• Your Potential Discoveries**")
+                your_discoveries = []
+                for move in board.legal_moves:
+                    from_square = move.from_square
+                    piece = board.piece_at(from_square)
+                    if not piece or piece.color != next_to_move:
+                        continue
+                    board.push(move)
+                    if board.is_check():
+                        your_discoveries.append(f"{piece.symbol()}@{chess.square_name(from_square)} moving creates discovery")
+                    board.pop()
+                st.markdown(f"- Your discoveries: {', '.join(your_discoveries) if your_discoveries else 'None'}")
 else:
     # Center the info message when no file is uploaded
     st.markdown(
