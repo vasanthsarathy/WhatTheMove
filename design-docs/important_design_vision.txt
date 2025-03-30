@@ -1,0 +1,20 @@
+VISION
+
+I have a chess thought process that I want to improve on - here is my process 
+1. Orient - look at the position for: 
+- “kings” - are there open lines to the kings, does either side have check mate threats, are there checks available
+- “things” - hanging pieces, loose pieces, overloaded pieces or weak pawns 
+- “strings” - for either side any potential pins and discoveries, are the pieces lined up 
+
+2. Select a “direction” of play 
+- if there is a threat, then what are all my responses - retreat, counter attack, defend, capture the attacker etc 
+- if no threat then look at stage of play: opening, middle game or end game. If opening my direction could be to develop pieces, castle king or control center. If middle game then direction could be to start an attack (pawn storm, pawn breaks, move pieces to other side of the board, etc) or improve piece mobility or trade away opponents good pieces.  If end game then direction could be to promote pawns. Generally if I’m winning, then focus on trading down, keeping king safe and keeping positions simple. If I am losing g then do not trade, and make the position as complex as possible. 
+
+3. Candidates - all the above steps might lead to candidate moves.  
+
+4.  Calculate - calculate the candidates. From most forcing to least, remove obviously bad moves, don’t do things that will fix opponents problems. Select one move
+
+5. Blunder check - quickly check for opponents best response 
+
+
+I want to write a python program that takes in a PGN of a game and analyzes the game using the above thought process. For the calculation step it can use an engine or some other algorithm like minimax. But the key is for each and every move I want it explicate the whole thought process and move choices 

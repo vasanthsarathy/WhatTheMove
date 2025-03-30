@@ -2,7 +2,7 @@
 
 WhatTheMove is a minimalist chess analysis tool that breaks down positions using a structured thought process. It helps chess players understand the key elements of each position and improve their analytical skills.
 
-![WhatTheMove Screenshot](https://i.imgur.com/placeholder.png)
+![WhatTheMove Screenshot](screenshot.png)
 
 ## Features
 
